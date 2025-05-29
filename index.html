@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrinho 2025</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<header>
+  <h1>Agrinho 2025</h1>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#temas">Temas</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<audio src="assets/audio/natureza.mp3" autoplay loop></audio>
+
+<section id="inicio" class="hero">
+  <h2>Bem-vindo ao Agrinho 2025</h2>
+  <p>Unindo tecnologia, sustentabilidade e meio ambiente para transformar o futuro.</p>
+  <button onclick="scrollToSection('sobre')">Saiba Mais</button>
+</section>
+
+<section id="sobre">
+  <h2>Sobre o Projeto</h2>
+  <p>O Agrinho 2025 é uma iniciativa educacional que conecta sustentabilidade, tecnologia no campo e preservação ambiental, capacitando jovens para construir um futuro mais consciente e responsável.</p>
+</section>
+
+<section id="temas">
+  <h2>Temas</h2>
+  <div class="temas-botoes">
+    <button onclick="abrirModal('modal1')">Sustentabilidade</button>
+    <button onclick="abrirModal('modal2')">Tecnologia no Agro</button>
+    <button onclick="abrirModal('modal3')">Preservação Ambiental</button>
+    <button onclick="abrirModal('modal4')">Futuro Sustentável</button>
+  </div>
+</section>
+
+<!-- Modais -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('modal1')">&times;</span>
+    <h3>Sustentabilidade</h3>
+    <p>Sustentabilidade significa garantir que as gerações futuras tenham os recursos necessários, cuidando do meio ambiente, economizando recursos naturais e incentivando práticas conscientes.</p>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('modal2')">&times;</span>
+    <h3>Tecnologia no Agro</h3>
+    <p>O uso de tecnologia no campo revoluciona a agricultura, com drones, sensores, automação, irrigação inteligente e inteligência artificial, que aumentam a produtividade de forma sustentável.</p>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('modal3')">&times;</span>
+    <h3>Preservação Ambiental</h3>
+    <p>Preservar rios, matas, fauna e flora é essencial. O agro sustentável busca reduzir impactos ambientais, conservar recursos hídricos e proteger os ecossistemas.</p>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('modal4')">&times;</span>
+    <h3>Futuro Sustentável</h3>
+    <p>O futuro sustentável depende da combinação de educação, inovação, responsabilidade social e econômica, preservando o meio ambiente e garantindo qualidade de vida para todos.</p>
+  </div>
+</div>
+
+<section id="galeria">
+  <h2>Galeria</h2>
+  <div class="galeria">
+    <img src="assets/imagens/natureza.jpg" alt="Natureza">
+    <img src="assets/imagens/sustentabilidade.jpg" alt="Sustentabilidade">
+    <img src="assets/imagens/tecnologia.jpg" alt="Tecnologia no Agro">
+    <img src="assets/imagens/futuro.jpg" alt="Futuro Sustentável">
+  </div>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <p>Entre em contato pelo nosso e-mail:</p>
+  <button onclick="alert('Email: agrinho2025@escola.com')">Enviar Email</button>
+</section>
+
+<footer>
+  <p>&copy; 2025 Agrinho - Projeto Educacional. Licença MIT.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+  </html>
