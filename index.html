@@ -1,130 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Agrinho 2025 - Tecnologia, Sustentabilidade e Meio Ambiente</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrinho 2025 - O Futuro do Campo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <audio id="audio" src="assets/audio/natureza.mp3" autoplay loop></audio>
+<audio src="assets/audio/natureza.mp3" autoplay loop></audio>
 
-  <header>
-    <h1 id="typing"></h1>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#temas">Temas</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+<canvas id="particles"></canvas>
 
-  <section id="inicio" class="hero">
-    <h2>Bem-vindo ao Agrinho 2025</h2>
-    <p>O futuro do campo é sustentável, tecnológico e conectado. Explore!</p>
-    <button onclick="scrollToSection('sobre')">Saiba Mais</button>
-  </section>
+<header>
+  <h1>Agrinho 2025</h1>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#temas">Temas</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <section id="sobre" class="sobre">
-    <h2>Sobre o Projeto</h2>
-    <p>O Agrinho 2025 é uma iniciativa educacional que promove a conscientização sobre sustentabilidade, meio ambiente e o uso responsável da tecnologia no campo, conectando as novas gerações às práticas sustentáveis que constroem um futuro melhor para todos.</p>
-    <div class="cards">
-      <div class="card">
-        <div class="front">
-          <h3>Sustentabilidade</h3>
-        </div>
-        <div class="back">
-          <p>Adotar práticas que preservem o meio ambiente e garantam qualidade de vida às futuras gerações é essencial no campo e na cidade.</p>
-        </div>
-      </div>
+<section id="inicio" class="hero">
+  <h2>Bem-vindo ao Agrinho 2025</h2>
+  <p>Onde tecnologia, sustentabilidade e meio ambiente se encontram.</p>
+  <button onclick="scrollToSection('sobre')">Saiba Mais</button>
+</section>
 
-      <div class="card">
-        <div class="front">
-          <h3>Tecnologia no Campo</h3>
-        </div>
-        <div class="back">
-          <p>Drones, sensores, inteligência artificial e automação já fazem parte do campo, aumentando produtividade e reduzindo impactos.</p>
-        </div>
-      </div>
+<section id="sobre" class="sobre">
+  <h2>Sobre o Agrinho 2025</h2>
+  <p>O Agrinho 2025 é um projeto educacional que une tecnologia, meio ambiente e sustentabilidade no campo. O objetivo é preparar as futuras gerações para cuidar do nosso planeta com responsabilidade, consciência e inovação.</p>
+</section>
 
-      <div class="card">
-        <div class="front">
-          <h3>Meio Ambiente</h3>
-        </div>
-        <div class="back">
-          <p>Preservar recursos naturais, cuidar das florestas, da água e do solo é fundamental para a vida e o equilíbrio ecológico.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="temas" class="temas">
-    <h2>Temas do Agrinho 2025</h2>
-    <div class="botoes-temas">
-      <button onclick="abrirModal('modal1')">Sustentabilidade</button>
-      <button onclick="abrirModal('modal2')">Tecnologia no Agro</button>
-      <button onclick="abrirModal('modal3')">Preservação Ambiental</button>
-      <button onclick="abrirModal('modal4')">Futuro Sustentável</button>
-    </div>
-  </section>
-
-  <!-- Modais -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="fecharModal('modal1')">&times;</span>
-      <h3>Sustentabilidade</h3>
-      <p>A sustentabilidade no campo envolve práticas que visam conservar recursos naturais, como uso racional da água, rotação de culturas e energia limpa, garantindo produtividade sem agredir o meio ambiente.</p>
-    </div>
+<section id="temas" class="temas">
+  <h2>Temas do Projeto</h2>
+  <div class="botoes-temas">
+    <button onclick="abrirModal('modal1')">Sustentabilidade</button>
+    <button onclick="abrirModal('modal2')">Tecnologia no Agro</button>
+    <button onclick="abrirModal('modal3')">Preservação Ambiental</button>
+    <button onclick="abrirModal('modal4')">Futuro Sustentável</button>
   </div>
+</section>
 
-  <div id="modal2" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="fecharModal('modal2')">&times;</span>
-      <h3>Tecnologia no Agro</h3>
-      <p>O uso de drones, sensores, inteligência artificial, GPS e automação transforma o campo, tornando a agricultura mais eficiente, precisa e sustentável.</p>
-    </div>
+<!-- Modais -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('modal1')">&times;</span>
+    <h3>Sustentabilidade</h3>
+    <p>A sustentabilidade busca conciliar desenvolvimento econômico com conservação do meio ambiente, garantindo recursos para as gerações futuras.</p>
   </div>
+</div>
 
-  <div id="modal3" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="fecharModal('modal3')">&times;</span>
-      <h3>Preservação Ambiental</h3>
-      <p>Proteger florestas, nascentes, rios e solos é fundamental. Práticas como reflorestamento, controle de queimadas e proteção de fauna e flora fazem parte do agro moderno.</p>
-    </div>
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('modal2')">&times;</span>
+    <h3>Tecnologia no Agro</h3>
+    <p>O uso de drones, sensores, automação, GPS e inteligência artificial está transformando o campo, tornando a produção mais eficiente e sustentável.</p>
   </div>
+</div>
 
-  <div id="modal4" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="fecharModal('modal4')">&times;</span>
-      <h3>Futuro Sustentável</h3>
-      <p>O futuro depende de ações no presente. Educação ambiental, inovação e responsabilidade são chaves para garantir um mundo mais equilibrado e justo para todos.</p>
-    </div>
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('modal3')">&times;</span>
+    <h3>Preservação Ambiental</h3>
+    <p>Proteger rios, florestas e a biodiversidade é essencial. O agro moderno está cada vez mais consciente da importância da preservação ambiental.</p>
   </div>
+</div>
 
-  <section id="galeria" class="galeria">
-    <h2>Galeria Interativa</h2>
-    <div class="imagens">
-      <img src="assets/imagens/natureza.jpg" alt="Natureza">
-      <img src="assets/imagens/sustentabilidade.jpg" alt="Sustentabilidade">
-      <img src="assets/imagens/tecnologia.jpg" alt="Tecnologia no Agro">
-      <img src="assets/imagens/neon.jpg" alt="Futuro Sustentável">
-    </div>
-  </section>
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('modal4')">&times;</span>
+    <h3>Futuro Sustentável</h3>
+    <p>O futuro sustentável depende de educação, inovação e compromisso coletivo para equilibrar desenvolvimento, bem-estar e meio ambiente.</p>
+  </div>
+</div>
 
-  <section id="contato" class="contato">
-    <h2>Fale Conosco</h2>
-    <p>Entre em contato para saber mais sobre o projeto Agrinho 2025.</p>
-    <button onclick="alert('Email: agrinho2025@escola.com')">Clique aqui para ver nosso email</button>
-  </section>
+<section id="galeria" class="galeria">
+  <h2>Galeria</h2>
+  <div class="imagens">
+    <img src="assets/imagens/natureza.jpg" alt="Natureza">
+    <img src="assets/imagens/sustentabilidade.jpg" alt="Sustentabilidade">
+    <img src="assets/imagens/tecnologia.jpg" alt="Tecnologia">
+    <img src="assets/imagens/futuro.jpg" alt="Futuro Sustentável">
+  </div>
+</section>
 
-  <footer>
-    <p>© 2025 Agrinho | Feito com ❤️</p>
-  </footer>
+<section id="contato" class="contato">
+  <h2>Contato</h2>
+  <p>Quer saber mais? Fale conosco!</p>
+  <button onclick="alert('Email: agrinho2025@escola.com')">Nosso Email</button>
+</section>
+
+<footer>
+  <p>© 2025 Agrinho | Projeto Educacional | Licença MIT</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
-        </html>
+</html>
