@@ -1,16 +1,18 @@
-// Efeito digitando no título
-const text = "Agrinho 2025 - O Futuro do Campo é Agora";
-let index = 0;
-function typeWriter() {
-  if (index < text.length) {
-    document.getElementById("typing").innerHTML += text.charAt(index);
-    index++;
-    setTimeout(typeWriter, 100);
-  }
+// Funções dos Modais
+function abrirModal(id) {
+  document.getElementById(id).style.display = 'block';
 }
-typeWriter();
 
-// Função scroll suave ao clicar nos botões
-function scrollToSection(id) {
-  document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+function fecharModal(id) {
+  document.getElementById(id).style.display = 'none';
 }
+
+// Fecha modal clicando fora
+window.onclick = function(event) {
+  const modais = document.getElementsByClassName('modal');
+  for (let modal of modais) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+};
