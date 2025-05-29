@@ -64,15 +64,46 @@
 
   <section id="temas" class="temas">
     <h2>Temas do Agrinho 2025</h2>
-    <div class="slider">
-      <div class="slides">
-        <div class="slide"><img src="assets/imagens/natureza.jpg" alt="Natureza"><p>Preservação da Natureza</p></div>
-        <div class="slide"><img src="assets/imagens/sustentabilidade.jpg" alt="Sustentabilidade"><p>Sustentabilidade no Campo</p></div>
-        <div class="slide"><img src="assets/imagens/tecnologia.jpg" alt="Tecnologia"><p>Tecnologia e Inovação no Agro</p></div>
-        <div class="slide"><img src="assets/imagens/neon.jpg" alt="Futuro"><p>Futuro Sustentável</p></div>
-      </div>
+    <div class="botoes-temas">
+      <button onclick="abrirModal('modal1')">Sustentabilidade</button>
+      <button onclick="abrirModal('modal2')">Tecnologia no Agro</button>
+      <button onclick="abrirModal('modal3')">Preservação Ambiental</button>
+      <button onclick="abrirModal('modal4')">Futuro Sustentável</button>
     </div>
   </section>
+
+  <!-- Modais -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal('modal1')">&times;</span>
+      <h3>Sustentabilidade</h3>
+      <p>A sustentabilidade no campo envolve práticas que visam conservar recursos naturais, como uso racional da água, rotação de culturas e energia limpa, garantindo produtividade sem agredir o meio ambiente.</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal('modal2')">&times;</span>
+      <h3>Tecnologia no Agro</h3>
+      <p>O uso de drones, sensores, inteligência artificial, GPS e automação transforma o campo, tornando a agricultura mais eficiente, precisa e sustentável.</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal('modal3')">&times;</span>
+      <h3>Preservação Ambiental</h3>
+      <p>Proteger florestas, nascentes, rios e solos é fundamental. Práticas como reflorestamento, controle de queimadas e proteção de fauna e flora fazem parte do agro moderno.</p>
+    </div>
+  </div>
+
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal('modal4')">&times;</span>
+      <h3>Futuro Sustentável</h3>
+      <p>O futuro depende de ações no presente. Educação ambiental, inovação e responsabilidade são chaves para garantir um mundo mais equilibrado e justo para todos.</p>
+    </div>
+  </div>
 
   <section id="galeria" class="galeria">
     <h2>Galeria Interativa</h2>
@@ -96,4 +127,4 @@
 
 <script src="script.js"></script>
 </body>
-</html>
+        </html>
